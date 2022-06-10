@@ -81,7 +81,7 @@ const Home = () => {
             <div className="max-w-2xl mx-auto mt-14 sm:mt-16 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-3">
               <div className="flex flex-col-reverse">
                 <div className="mt-4">
-                  <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+                  <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                     {product.name}
                   </h1>
                 </div>
