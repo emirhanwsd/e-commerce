@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { ShoppingBagIcon } from "@heroicons/react/outline";
 import { StarIcon } from "@heroicons/react/solid";
-import logo from "../public/logo.png";
 
 const product = {
   name: "Application UI Icon Pack",
@@ -27,10 +26,6 @@ const relatedProducts = [
     imageSrc: "/product/fusion-ui-kit.jpg",
   },
 ];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const Home = () => {
   return (
@@ -77,8 +72,8 @@ const Home = () => {
               <div className="aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
                 <img
                   src={product.imageSrc}
-                  alt=""
                   className="object-center object-cover"
+                  alt=""
                 />
               </div>
             </div>
@@ -96,10 +91,7 @@ const Home = () => {
                     {[0, 1, 2, 3, 4].map((rating) => (
                       <StarIcon
                         key={rating}
-                        className={classNames(
-                          "text-yellow-400",
-                          "h-5 w-5 flex-shrink-0"
-                        )}
+                        className="text-yellow-400 h-5 w-5 flex-shrink-0"
                         aria-hidden="true"
                       />
                     ))}
