@@ -1,3 +1,3 @@
 # 🛒 Ecommerce
 
-An example ecommerce page design
+Ecommerce app design
