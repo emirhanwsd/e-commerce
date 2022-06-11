@@ -4,7 +4,6 @@ import { StarIcon } from "@heroicons/react/solid";
 
 const product = {
   name: "Application UI Icon Pack",
-  version: { name: "1.0", date: "June 5, 2021", datetime: "2021-06-05" },
   price: 220,
   description:
     "The Application UI Icon Pack comes with over 200 icons in 3 styles: outline, filled, and branded. This playful icon pack is tailored for complex application user interfaces with a friendly and legible look.",
