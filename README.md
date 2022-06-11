@@ -18,7 +18,7 @@ npm run dev
 
 - [React](https://reactjs.org/)
 - [NextJS](https://nextjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [TailwindUI](https://tailwindui.com/)
 
 ## 📜 License
