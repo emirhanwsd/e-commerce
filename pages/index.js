@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import { ShoppingBagIcon } from "@heroicons/react/outline";
 import { StarIcon } from "@heroicons/react/solid";
 
@@ -35,10 +36,7 @@ const Home = () => {
 
       <div className="bg-white">
         <header className="relative bg-white">
-          <nav
-            aria-label="Top"
-            className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-          >
+          <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="border-b border-gray-200">
               <div className="h-16 flex items-center">
                 <div className="ml-4 flex lg:ml-0">
@@ -50,10 +48,8 @@ const Home = () => {
                 <div className="ml-auto flex items-center">
                   <div className="ml-4 flow-root lg:ml-6">
                     <a href="#" className="group -m-2 p-2 flex items-center">
-                      <ShoppingBagIcon
-                        className="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500 transition-colors"
-                        aria-hidden="true"
-                      />
+                      <ShoppingBagIcon className="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500 transition-colors" />
+
                       <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800 transition-colors">
                         0
                       </span>
@@ -91,7 +87,6 @@ const Home = () => {
                       <StarIcon
                         key={rating}
                         className="text-yellow-400 h-5 w-5 flex-shrink-0"
-                        aria-hidden="true"
                       />
                     ))}
                   </div>
@@ -119,6 +114,7 @@ const Home = () => {
                 <h3 className="text-sm font-medium text-gray-900">
                   Description
                 </h3>
+
                 <div className="mt-4 prose prose-sm text-gray-500">
                   <ul role="list">
                     {product.highlights.map((highlight) => (
@@ -135,13 +131,15 @@ const Home = () => {
               <h2 className="text-lg font-medium text-gray-900">
                 Customers also viewed
               </h2>
+
               <a
                 href="#"
                 className="whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors"
               >
-                View all<span aria-hidden="true"> &rarr;</span>
+                View all &rarr;
               </a>
             </div>
+
             <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
               {relatedProducts.map((product) => (
                 <div key={product.id} className="relative group">
@@ -152,15 +150,17 @@ const Home = () => {
                       className="object-center object-cover group-hover:opacity-75 transition-opacity"
                     />
                   </div>
+
                   <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
                     <h3>
                       <a href="#">
-                        <span aria-hidden="true" className="absolute inset-0" />
+                        <span className="absolute inset-0" />
                         {product.name}
                       </a>
                     </h3>
                     <p>${product.price}</p>
                   </div>
+
                   <p className="mt-1 text-sm text-gray-500">
                     {product.category}
                   </p>
@@ -170,7 +170,7 @@ const Home = () => {
           </div>
         </main>
 
-        <footer aria-labelledby="footer-heading" className="bg-gray-50">
+        <footer className="bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="border-t border-gray-200 py-10 text-center">
               <p className="text-sm text-gray-500">made with ♥.</p>
